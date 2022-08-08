@@ -3,7 +3,7 @@
 #define P
 char *format_int(int n, char b[]);
 char *format_uns_int(unsigned int n, char b[]);
-void _putchar(char c);
+int _putchar(char c);
 #ifdef M
 int main(void)
 {

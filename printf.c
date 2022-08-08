@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 		
 			if (format[i + 1] == 'd' || format[i + 1] == 'i')
 			{
-				tmp = va_arg(args, int)
+				tmp = va_arg(args, int);
 				numStr = format_int(tmp, b);
 				
 				for (j = 0; numStr[j] != '\0'; j++)
@@ -150,7 +150,7 @@ char *format_uns_int(unsigned int n, char b[])
 
 }
 
-void _putchar(char c)
+int _putchar(char c)
 {
 	write(1, &c, 1);
 }

@@ -2,7 +2,7 @@
 
 
 /**
- * _printf - A frunction that produces output according to a format
+ * _printf - A function that produces output according to a format
  * @format: a character string argument passed
  *
  * Return: Number of characters printed.
@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	for (a = 0; format[a]; a++)
 	{
-		if (formal[a] == '%')
+		if (format[a] == '%')
 		{
 			a++;
 			if (!(format[a]))

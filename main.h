@@ -14,7 +14,10 @@ int _putchar(char c, int len);
 int print_int(const char *format, va_list args, int i);
 int print_uns_int(const char *format, va_list args, int i);
 int (*get_format_func(const char *format, int i))(const char *, va_list, int);
+<<<<<<< HEAD
 int main(void);
 int prints_string(char *string);
+=======
+>>>>>>> a05414fc27dab7aab37c07d73164034153f7aec5
 
 #endif /* MAIN_H */

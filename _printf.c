@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -29,29 +28,21 @@ int _printf(const char *format, ...)
 			switch (format[i + 1])
 			{
 				case 'c':
-					
 					count += _putchar(va_arg(data, int));
 
-					  break;
+					break;
 
-				case 's': 
-					  
-					  count += print_string(va_arg(data, char *));
+				case 's':
+					count += print_string(va_arg(data, char *));
+					break;
+				case '%':
+					count += _putchar('%');
 
-					  break;
-
-				case '%': 
-					  
-					  count += _putchar('%');
-
-					  break;
+					break;
 			}
 		}
 	}
-
 	return (count);
-
-
 }
 
 /**

@@ -1,12 +1,12 @@
 #include "main.h"
 
-
 /**
  * _printf - A function that produces output according to a format
  * @format: a character string argument passed
  *
  * Return: Number of characters printed.
  */
+
 int _printf(const char *format, ...)
 {
 	int result = 0, a;
@@ -14,6 +14,7 @@ int _printf(const char *format, ...)
 	int (*func)(va_list);
 
 	va_start(par, format);
+
 	if (format == 0)
 		return (-1);
 	for (a = 0; format[a]; a++)
@@ -44,4 +45,3 @@ int _printf(const char *format, ...)
 	va_end(par);
 	return (result);
 }
-

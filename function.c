@@ -4,7 +4,6 @@
 /**
  * print_c - function to print character
  * @par: characters to print
- *
  * Return: number of character or -1
  */
 
@@ -18,7 +17,6 @@ int print_c(va_list par)
 /**
  * print_s - function to print string
  * @par: string to print
- *
  * Return: number of characters to print
  */
 
@@ -38,7 +36,6 @@ int print_s(va_list par)
 /**
  * print_percent - function to print %
  * @par: unused
- *
  * Return: always 1
  */
 
@@ -54,7 +51,6 @@ int print_percent(__attribute__((unused))va_list par)
 /**
  * print_integer - to print an integer
  * @par: integer to print
- *
  * Return: number of chars and digits printed
  */
 
@@ -99,7 +95,6 @@ int print_integer(va_list par)
 /**
  * print_decimal - to print a decimal
  * @par: decimal to print
- *
  * Return: number of chars and digit printed
  */
 

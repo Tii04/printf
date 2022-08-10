@@ -3,9 +3,9 @@
 /**
  * get_func - function to find a function pointer
  * @a: specifier to find the correct function
- *
  * Return: function pointer
  */
+
 int(*get_func(const char a))(va_list)
 {
 	unsigned int x = 0;
